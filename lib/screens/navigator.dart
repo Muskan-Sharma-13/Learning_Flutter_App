@@ -69,7 +69,7 @@ class BaseScaffold extends StatelessWidget {
               _buildNavItem(context, Icons.question_answer, 'Doubts', () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const DoubtsPage()),
+                  MaterialPageRoute(builder: (context) => DoubtsPage()),
                 );
               }),
               _buildHomeButton(context),

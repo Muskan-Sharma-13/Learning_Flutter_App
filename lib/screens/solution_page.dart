@@ -7,26 +7,7 @@ class MathSolutionsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        leading: IconButton(
-          icon: const Icon(Icons.menu, color: Colors.black),
-          onPressed: () {},
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.notifications, color: Colors.black),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: const Icon(Icons.account_circle, color: Colors.black),
-            onPressed: () {},
-          ),
-        ],
-      ),
+    return BaseScaffold(
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -135,38 +116,38 @@ class MathSolutionsScreen extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
-        shape: const CircularNotchedRectangle(),
-        notchMargin: 8.0,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-              icon: const Icon(Icons.home_outlined),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.book_outlined),
-              onPressed: () {},
-            ),
-            const SizedBox(width: 48),
-            IconButton(
-              icon: const Icon(Icons.chat_bubble_outline),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.settings_outlined),
-              onPressed: () {},
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.teal,
-        child: const Icon(Icons.home),
-        onPressed: () {},
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      // bottomNavigationBar: BottomAppBar(
+      //   shape: const CircularNotchedRectangle(),
+      //   notchMargin: 8.0,
+      //   child: Row(
+      //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //     children: [
+      //       IconButton(
+      //         icon: const Icon(Icons.home_outlined),
+      //         onPressed: () {},
+      //       ),
+      //       IconButton(
+      //         icon: const Icon(Icons.book_outlined),
+      //         onPressed: () {},
+      //       ),
+      //       const SizedBox(width: 48),
+      //       IconButton(
+      //         icon: const Icon(Icons.chat_bubble_outline),
+      //         onPressed: () {},
+      //       ),
+      //       IconButton(
+      //         icon: const Icon(Icons.settings_outlined),
+      //         onPressed: () {},
+      //       ),
+      //     ],
+      //   ),
+      // ),
+      // floatingActionButton: FloatingActionButton(
+      //   backgroundColor: Colors.teal,
+      //   child: const Icon(Icons.home),
+      //   onPressed: () {},
+      // ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );
   }
 }
