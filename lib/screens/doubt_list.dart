@@ -19,8 +19,8 @@ class _PastDoubtsPageState extends State<PastDoubtsPage> {
     ['Mathematics','Linear Algebra','Solve these equations:','2nd April, 9:00pm']
   ];
 
-    Color getColor(String subject) {
-      switch (subject) {
+  Color getColor(String subject) {
+    switch (subject) {
       case 'Physics':
         return Colors.deepPurple.shade500;
       case 'Chemistry':

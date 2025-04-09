@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_module_app/screens/community_screen/feed_screen.dart';
 import 'package:learning_module_app/screens/doubt_list.dart';
 import 'package:learning_module_app/screens/navigator.dart';
 
@@ -58,7 +59,12 @@ class _DoubtsPageState extends State<DoubtsPage> {
                 Container(
                       width: 200,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context)=>const FeedScreen())
+                          );
+                        },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.teal,
                           padding: const EdgeInsets.symmetric(vertical: 10),
